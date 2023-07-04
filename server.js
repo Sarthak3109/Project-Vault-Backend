@@ -36,6 +36,7 @@ app.get('/', (req, res)=>{
   res.json({message : "hey there lil buddy"})
 })
 // END OF MONGOOSE
-app.listen(8080, ()=>{
+const PORT = process.env.PORT || 8080
+app.listen(PORT, ()=>{
     console.log("sevrer running")
 })
